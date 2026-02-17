@@ -1,0 +1,7 @@
+Request:
+curl http://localhost:5000/review/1
+
+Response:
+{
+    "reviewer1": "A masterpiece of African literature."
+}
