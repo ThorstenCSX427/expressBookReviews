@@ -1,0 +1,11 @@
+Request:
+curl http://localhost:5000/title/Fairy%20tales
+
+Response:
+[
+    {
+        "author": "Hans Christian Andersen",
+        "title": "Fairy tales",
+        "reviews": {}
+    }
+]
