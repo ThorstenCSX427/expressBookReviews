@@ -1,14 +1,14 @@
 let books = {
-      1: {"author": "Chinua Achebe","title": "Things Fall Apart", "reviews": {} },
-      2: {"author": "Hans Christian Andersen","title": "Fairy tales", "reviews": {} },
-      3: {"author": "Dante Alighieri","title": "The Divine Comedy", "reviews": {} },
-      4: {"author": "Unknown","title": "The Epic Of Gilgamesh", "reviews": {} },
-      5: {"author": "Unknown","title": "The Book Of Job", "reviews": {} },
-      6: {"author": "Unknown","title": "One Thousand and One Nights", "reviews": {} },
-      7: {"author": "Unknown","title": "Nj\u00e1l's Saga", "reviews": {} },
-      8: {"author": "Jane Austen","title": "Pride and Prejudice", "reviews": {} },
-      9: {"author": "Honor\u00e9 de Balzac","title": "Le P\u00e8re Goriot", "reviews": {} },
-      10: {"author": "Samuel Beckett","title": "Molloy, Malone Dies, The Unnamable, the trilogy", "reviews": {} }
+      1: {"author": "Chinua Achebe","title": "Things Fall Apart", "reviews": {"reviewer1": "A masterpiece of African literature."} },
+      2: {"author": "Hans Christian Andersen","title": "Fairy tales", "reviews": {"reviewer1": "Timeless and magical stories."} },
+      3: {"author": "Dante Alighieri","title": "The Divine Comedy", "reviews": {"reviewer1": "Epic and profound spiritual journey."} },
+      4: {"author": "Unknown","title": "The Epic Of Gilgamesh", "reviews": {"reviewer1": "Ancient wisdom and adventure."} },
+      5: {"author": "Unknown","title": "The Book Of Job", "reviews": {"reviewer1": "Deep exploration of suffering and faith."} },
+      6: {"author": "Unknown","title": "One Thousand and One Nights", "reviews": {"reviewer1": "Enchanting tales of wonder."} },
+      7: {"author": "Unknown","title": "Njál's Saga", "reviews": {"reviewer1": "Compelling Nordic saga."} },
+      8: {"author": "Jane Austen","title": "Pride and Prejudice", "reviews": {"reviewer1": "Witty romance and social commentary."} },
+      9: {"author": "Honoré de Balzac","title": "Le Père Goriot", "reviews": {"reviewer1": "Brilliant character study of ambition."} },
+      10: {"author": "Samuel Beckett","title": "Molloy, Malone Dies, The Unnamable, the trilogy", "reviews": {"reviewer1": "Experimental and philosophically challenging."} }
 }
 
 module.exports=books;
