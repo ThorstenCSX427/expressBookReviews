@@ -1,0 +1,26 @@
+Request:
+curl -X POST   http://localhost:5000/register   -H 'Content-Type: application/json'   -d '{
+    "username": "user3",
+    "password": "password3"
+}'
+
+Response:
+{"message":"User successfully registered. Now you can login"}
+
+
+Request:
+curl -X POST   http://localhost:5000/register   -H 'Content-Type: application/json'   -d '{
+    "username": "user3",
+    "password": "password3"
+}'
+
+Response:
+{"message":"User already exists!"}
+
+Request:
+curl -X POST   http://localhost:5000/register   -H 'Content-Type: application/json'   -d '{
+    "username": "user3" 
+}'
+
+Response                        :
+{"message":"Unable to register user."}
