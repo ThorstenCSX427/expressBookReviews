@@ -1,0 +1,12 @@
+Request:
+curl http://localhost:5000/author/Chinua%20Achebe
+
+
+Response:
+[
+    {
+        "author": "Chinua Achebe",
+        "title": "Things Fall Apart",
+        "reviews": {}
+    }
+]
