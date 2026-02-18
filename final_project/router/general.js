@@ -88,14 +88,25 @@ public_users.get('/author/:author', async (req, res) => {
 });
 
 // Get all books based on title
-public_users.get('/title/:title',function (req, res) {
+public_users.get('/title/:title', async (req, res) => {
   //Write your code here
-  const title = req.params.title;
-  const booksByTitle = Object.values(books).filter(book => book.title === title);
-  if (booksByTitle.length > 0) {
-    res.send(JSON.stringify(booksByTitle, null, 4));
-  } else {
-    res.status(404).json({message: "No books found with this title"});
+  try {
+    const title = req.params.title;
+    
+    // Simulating an async operation with Promise
+    const getBooksByTitle = new Promise((resolve, reject) => {
+      const booksByTitle = Object.values(books).filter(book => book.title === title);
+      if (booksByTitle.length > 0) {
+        resolve(booksByTitle);
+      } else {
+        reject("No books found with this title");
+      }
+    });
+    
+    const result = await getBooksByTitle;
+    res.send(JSON.stringify(result, null, 4));
+  } catch (error) {
+    res.status(404).json({message: error});
   }
 });
 
