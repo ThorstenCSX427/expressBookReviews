@@ -1,12 +1,14 @@
 Request:
-curl http://localhost:5000/isbn/1
+curl http://localhost:5000/author/Chinua%20Achebe
 
 
 Response:
-{
-    "author": "Chinua Achebe",
-    "title": "Things Fall Apart",
-    "reviews": {
-        "reviewer1": "A masterpiece of African literature."
+[
+    {
+        "author": "Chinua Achebe",
+        "title": "Things Fall Apart",
+        "reviews": {
+            "reviewer1": "A masterpiece of African literature."
+        }
     }
-}
+]
