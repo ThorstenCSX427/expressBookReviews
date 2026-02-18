@@ -1,13 +1,76 @@
 Request:
-curl http://localhost:5000/title/Fairy%20tales
+curl -X GET http://localhost:5000/
 
 Response:
-[
-    {
+{
+    "1": {
+        "author": "Chinua Achebe",
+        "title": "Things Fall Apart",
+        "reviews": {
+            "reviewer1": "A masterpiece of African literature."
+        }
+    },
+    "2": {
         "author": "Hans Christian Andersen",
         "title": "Fairy tales",
         "reviews": {
             "reviewer1": "Timeless and magical stories."
         }
+    },
+    "3": {
+        "author": "Dante Alighieri",
+        "title": "The Divine Comedy",
+        "reviews": {
+            "reviewer1": "Epic and profound spiritual journey."
+        }
+    },
+    "4": {
+        "author": "Unknown",
+        "title": "The Epic Of Gilgamesh",
+        "reviews": {
+            "reviewer1": "Ancient wisdom and adventure."
+        }
+    },
+    "5": {
+        "author": "Unknown",
+        "title": "The Book Of Job",
+        "reviews": {
+            "reviewer1": "Deep exploration of suffering and faith."
+        }
+    },
+    "6": {
+        "author": "Unknown",
+        "title": "One Thousand and One Nights",
+        "reviews": {
+            "reviewer1": "Enchanting tales of wonder."
+        }
+    },
+    "7": {
+        "author": "Unknown",
+        "title": "Njál's Saga",
+        "reviews": {
+            "reviewer1": "Compelling Nordic saga."
+        }
+    },
+    "8": {
+        "author": "Jane Austen",
+        "title": "Pride and Prejudice",
+        "reviews": {
+            "reviewer1": "Witty romance and social commentary."
+        }
+    },
+    "9": {
+        "author": "Honoré de Balzac",
+        "title": "Le Père Goriot",
+        "reviews": {
+            "reviewer1": "Brilliant character study of ambition."
+        }
+    },
+    "10": {
+        "author": "Samuel Beckett",
+        "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+        "reviews": {
+            "reviewer1": "Experimental and philosophically challenging."
+        }
     }
-]
+}
