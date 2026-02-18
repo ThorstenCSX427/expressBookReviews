@@ -1,14 +1,13 @@
 Request:
-curl http://localhost:5000/author/Chinua%20Achebe
-
+curl http://localhost:5000/title/Fairy%20tales
 
 Response:
 [
     {
-        "author": "Chinua Achebe",
-        "title": "Things Fall Apart",
+        "author": "Hans Christian Andersen",
+        "title": "Fairy tales",
         "reviews": {
-            "reviewer1": "A masterpiece of African literature."
+            "reviewer1": "Timeless and magical stories."
         }
     }
 ]
