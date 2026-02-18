@@ -71,7 +71,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
     } 
 });
 
-// Delete a book review
+// TASK9: Delete a book review
 regd_users.delete("/auth/review/:isbn", (req, res) => {
     const isbn = req.params.isbn;
     const username = req.session.authorization.username;
